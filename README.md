@@ -1,6 +1,10 @@
 # Run instructions
 Look at `cmds.sh`
 
+
+https://user-images.githubusercontent.com/4771908/149505700-45737308-d777-480c-a05f-69028ab3db94.mp4
+
+
 # README #
 
 This repository contains the ROVIO (Robust Visual Inertial Odometry) framework. The code is open-source (BSD License). Please remember that it is strongly coupled to on-going research and thus some parts are not fully mature yet. Furthermore, the code will also be subject to changes in the future which could include greater re-factoring of some parts.
