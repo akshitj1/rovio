@@ -5,7 +5,6 @@ catkin build rovio -DMAKE_SCENE=ON -j1 --mem-limit 4g --verbose
 
 # run
 roslaunch rovio rovio_node.launch
-rosbag play /home/akshitjain/catkin_ws/data/cam_imu_fixed.bag
 
 # create april tag
 rosrun kalibr kalibr_create_target_pdf --type apriltag --nx 4 --ny 5 --tsize 0.037 --tspace 0.3

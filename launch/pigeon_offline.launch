@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?> 
 <launch>
   <node pkg="rovio" type="rovio_pigeon_loader" name="rovio" output="screen">
-  <param name="filter_config" value="$(find rovio)/cfg/rovio_pi.info"/>
-  <param name="camera0_config" value="$(find rovio)/cfg/raspi_cam.yaml"/>
-  <param name="rosbag_filename" value="/home/akshitjain/catkin_ws/data/cam_imu_fixed.bag"/>
-  <param name="imu_topic_name" value="/vio/imu"/>
-  <param name="cam0_topic_name" value="/vio/raspicam_node/image"/>
+    <param name="filter_config" value="$(find rovio)/cfg/rovio_pi.info"/>
+    <param name="camera0_config" value="$(find rovio)/cfg/raspi_cam.yaml"/>
+    <param name="rosbag_filename" value="/home/akshitjain/catkin_ws/data/cam_imu_fixed.bag"/>
+    <param name="imu_topic_name" value="/vio/imu"/>
+    <param name="cam0_topic_name" value="/vio/raspicam_node/image"/>
   </node>
 </launch>

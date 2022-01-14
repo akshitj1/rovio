@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?> 
 <launch>
   <node pkg="rovio" type="rovio_node" name="rovio" output="screen">
-  <param name="filter_config" value="$(find rovio)/cfg/rovio_pi.info"/>
-  <param name="camera0_config" value="$(find rovio)/cfg/raspi_cam.yaml"/>
-  <!-- <param name="camera1_config" value="$(find rovio)/cfg/euroc_cam1.yaml"/> -->
-  <remap from="/imu0" to="/vio/imu"/>
-  <remap from="/cam0/image_raw" to="/vio/raspicam_node/image"/>
+    <param name="filter_config" value="$(find rovio)/cfg/rovio_pi.info"/>
+    <param name="camera0_config" value="$(find rovio)/cfg/raspi_cam.yaml"/>
+    <!-- <param name="camera1_config" value="$(find rovio)/cfg/euroc_cam1.yaml"/> -->
+    <remap from="/imu0" to="/vio/imu"/>
+    <remap from="/cam0/image_raw" to="/vio/raspicam_node/image"/>
   </node>
+
+  <node pkg="rosbag" type="play" name="bag_player" output="screen" args="--clock /home/akshitjain/catkin_ws/data/cam_imu_fixed.bag"/>
+  <node pkg="rosbag" type="record" name="odometry_recorder" output="screen" args="/rovio/odometry -O /home/akshitjain/catkin_ws/data/pigeon_state"/>
 </launch>
