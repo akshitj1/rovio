@@ -107,7 +107,7 @@ if(MAKE_SCENE)
 else()
 	add_library(${PROJECT_NAME} src/Camera.cpp src/FeatureCoordinates.cpp src/FeatureDistance.cpp)
 endif()
-target_link_libraries(${PROJECT_NAME} ${catkin_LIBRARIES} ${YamlCpp_LIBRARIES} ${OpenMP_EXE_LINKER_FLAGS} ${OPENGL_LIBRARIES} ${GLUT_LIBRARY} ${GLEW_LIBRARY} ${OpenCV_LIBRARIES})
+target_link_libraries(${PROJECT_NAME} ${catkin_LIBRARIES} ${YamlCpp_LIBRARIES} ${OpenMP_EXE_LINKER_FLAGS} ${OPENGL_LIBRARIES} ${GLUT_LIBRARY} ${GLEW_LIBRARIES} ${OpenCV_LIBRARIES})
 add_dependencies(${PROJECT_NAME} ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS} rovio_generate_messages_cpp)
 
 add_executable(rovio_node src/rovio_node.cpp)
@@ -116,6 +116,11 @@ target_link_libraries(rovio_node ${PROJECT_NAME})
 add_executable(rovio_rosbag_loader src/rovio_rosbag_loader.cpp)
 target_link_libraries(rovio_rosbag_loader ${PROJECT_NAME})
 add_dependencies(rovio_rosbag_loader ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+
+add_executable(rovio_pigeon_loader src/rovio_pigeon_loader.cpp)
+target_link_libraries(rovio_pigeon_loader ${PROJECT_NAME})
+add_dependencies(rovio_pigeon_loader ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+
 
 add_executable(feature_tracker_node src/feature_tracker_node.cpp)
 target_link_libraries(feature_tracker_node ${PROJECT_NAME})
