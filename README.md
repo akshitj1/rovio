@@ -25,7 +25,7 @@ Look at `cmds.sh`
 
 https://user-images.githubusercontent.com/4771908/149505700-45737308-d777-480c-a05f-69028ab3db94.mp4
 
-I have left some some elaborate instructions on camera calibration, imu code etc. Don't know if readers require it or not. Please raise an issue with whatever you guys need. You are not stuck alone, even I was and I will fast-forward you with my solve.
+I have left out some elaborate instructions on camera calibration, imu code etc. Don't know if readers require it or not. Please raise an issue with whatever you guys need. You are not stuck alone, even I was and I will fast-forward you with my solve.
 
 ## Dig further
 Refer to original repo: [ethz-asl/rovio](https://github.com/ethz-asl/rovio)
