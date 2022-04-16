@@ -1,9 +1,9 @@
 # Rovio - Real-time visual inertial odometry
 ## Demo
 
-Below is a video, click to watch.
+![Demo on real platform](https://user-images.githubusercontent.com/4771908/163667319-6562940c-eb21-4c6a-9fa2-b1a05e625dfd.png "visual inertial odometry - Rovio")
 
-[![Demo on real platform](http://img.youtube.com/vi/maiFTbCU-PY/0.jpg)](http://www.youtube.com/watch?v=maiFTbCU-PY "visual inertial odometry - Rovio")
+<!-- [![Demo on real platform](http://img.youtube.com/vi/maiFTbCU-PY/0.jpg)](http://www.youtube.com/watch?v=maiFTbCU-PY "visual inertial odometry - Rovio") -->
 
 ## Hardware Setup
 ### Components
@@ -14,9 +14,7 @@ Below is a video, click to watch.
 - Structural: Shoe box :)
 
 ### Platform
-<!-- ![rovio_box](https://user-images.githubusercontent.com/4771908/163665996-6067aec3-461d-47bd-8d0a-c4eec4203b31.jpg | width=200)
-![rovio](https://user-images.githubusercontent.com/4771908/163665998-99c09bed-3ffa-4374-9884-c9378c452051.jpg)
- -->
+<!-- https://stackoverflow.com/questions/11804820/how-can-i-embed-a-youtube-video-on-github-wiki-pages -->
 <img alt="vio platform internal" src="https://user-images.githubusercontent.com/4771908/163665998-99c09bed-3ffa-4374-9884-c9378c452051.jpg" width="400"/>
 <img alt="vio platform external" src="https://user-images.githubusercontent.com/4771908/163665996-6067aec3-461d-47bd-8d0a-c4eec4203b31.jpg" width="400"/>
 
