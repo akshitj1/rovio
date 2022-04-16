@@ -19,7 +19,7 @@
 <img alt="vio platform external" src="https://user-images.githubusercontent.com/4771908/163665996-6067aec3-461d-47bd-8d0a-c4eec4203b31.jpg" width="400"/>
 
 ## Record Visual and Inertial data
-Refer to instructions in subdirectory [pi_vio_record](pi_vio_record/README.md)
+Refer to instructions in subdirectory [pi_vio_record](./pi_vio_record)
 
 ## Run instructions
 Look at [cmds.sh](./cmds.sh)
