@@ -1,7 +1,7 @@
 # Rovio - Real-time visual inertial odometry
 ## Demo
 
-![Demo on real platform](https://user-images.githubusercontent.com/4771908/163667319-6562940c-eb21-4c6a-9fa2-b1a05e625dfd.png "visual inertial odometry - Rovio")
+[![Demo on real platform](https://user-images.githubusercontent.com/4771908/163667319-6562940c-eb21-4c6a-9fa2-b1a05e625dfd.png "visual inertial odometry - Rovio")](https://www.youtube.com/watch?v=maiFTbCU-PY)
 
 <!-- [![Demo on real platform](http://img.youtube.com/vi/maiFTbCU-PY/0.jpg)](http://www.youtube.com/watch?v=maiFTbCU-PY "visual inertial odometry - Rovio") -->
 
