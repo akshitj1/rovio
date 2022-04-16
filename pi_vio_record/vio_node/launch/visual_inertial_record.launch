@@ -1,0 +1,36 @@
+<launch>
+    <arg name="camera_name" default="camerav2_410x308"/>
+    <arg name="camera_frequency" default="20"/>
+    <arg name="imu_frequency" default="200"/>    
+    <arg name="camera_image_width" default="640"/>
+    <arg name="camera_image_height" default="480"/>
+    <arg name="enable_raw" default="true"/>
+    <arg name="vio_record_out_file" default="cam_imu_calibrate"/>
+    <arg name="record_duration_secs" default="60"/>
+    
+
+
+    <group ns="vio">
+        <node pkg="raspicam_node" name="raspicam_node" type="raspicam_node" output="screen">
+            <param name="private_topics" value="true"/>
+
+            <param name="camera_frame_id" value="raspicam"/>
+            <param name="enable_raw" value="$(arg enable_raw)"/>
+            <param name="enable_imv" value="false"/>
+            <param name="camera_id" value="0"/>
+
+            <param name="camera_info_url" value="package://raspicam_node/camera_info/camerav2_410x308.yaml"/>
+            <param name="camera_name" value="$(arg camera_name)"/>
+            <param name="width" value="$(arg camera_image_width)"/>
+            <param name="height" value="$(arg camera_image_height)"/>
+
+            <param name="framerate" value="$(arg camera_frequency)"/>
+            <param name="exposure_mode" value="antishake"/>
+            <param name="shutter_speed" value="0"/>
+        </node>
+        <node pkg="mpu6050" name="mpu6050_node" type="mpu6050_node" output="screen">
+            <param name="framerate" value="$(arg imu_frequency)"/>
+        </node>
+    </group>
+    <node pkg="rosbag" type="record" name="vio_record_node" args=" /vio/imu /vio/raspicam_node/image --duration=$(arg record_duration_secs) --output-name=/home/ubuntu/repos/catkin_ws/data/$(arg vio_record_out_file)"/>
+</launch>
