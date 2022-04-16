@@ -1,6 +1,6 @@
 # Rovio - Real-time visual inertial odometry
 ## Demo
-https://youtu.be/maiFTbCU-PY
+[![Demo on real platform](http://img.youtube.com/vi/maiFTbCU-PY/0.jpg)](http://www.youtube.com/watch?v=maiFTbCU-PY "visual inertial odometry - Rovio")
 
 ## Hardware Setup
 ### Components
